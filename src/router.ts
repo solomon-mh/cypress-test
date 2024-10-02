@@ -7,11 +7,13 @@ const routes: Array<RouteRecordRaw> = [
     path: "/",
     name: "Home",
     component: Home,
+    meta: { label: "Go to Home" },
   },
   {
     path: "/about",
     name: "About",
     component: About,
+    meta: { label: "Go to About" },
   },
 ];
 

@@ -1,21 +1,20 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-
+    <NavBar :routes="$router.options.routes" />
     <router-view></router-view>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import NavBar from './components/NavBar.vue';
 
 export default defineComponent({
-  name: 'App'
+  name: 'App',
+  components: {
+    NavBar,
+  }
 });
 </script>
 
@@ -27,8 +26,5 @@ export default defineComponent({
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-nav {
-  margin-bottom: 20px;
 }
 </style>
