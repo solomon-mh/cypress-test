@@ -1,16 +1,17 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+import About from "./components/About.vue";
+import Home from "./components/Home.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    name: "HelloWorld",
-    component: HelloWorld,
+    name: "Home",
+    component: Home,
   },
   {
     path: "/about",
-    name: "HelloWorld",
-    // Lazy-loaded component
-    component: () => import("../components/HelloWorld.vue"),
+    name: "About",
+    component: About,
   },
 ];
 
