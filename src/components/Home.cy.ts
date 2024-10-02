@@ -10,13 +10,10 @@ describe("Home Component", () => {
   it("renders the Home component with the correct message", () => {
     cy.mount(Home, {
       props: {
-        msg: "Welcome to Your Vue.js + TypeScript App",
+        msg: "Title to be matched",
       },
     });
 
-    cy.get("h1").should(
-      "contain",
-      "Welcome to Your Vue.js + TypeScript App (CHANGED)"
-    );
+    cy.get("h1").should("contain", "Title to be matched (BUG)");
   });
 });
