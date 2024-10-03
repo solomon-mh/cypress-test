@@ -3,7 +3,7 @@ name: Chromatic Deployment
 on:
   pull_request:
     branches:
-      - main # Adjust the branch as needed
+      - main
 
 jobs:
   chromatic-deployment:
@@ -11,12 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # Install dependencies
       - name: Install Dependencies
         run: pnpm install
 
-      # Run Chromatic to build Storybook and generate visual tests
       - name: Publish to Chromatic
-        run: npx chromatic --project-token=YOUR_PROJECT_TOKEN --exit-once-uploaded
+        run: npx chromatic --project-token=chpt_8425323d910bbc6 --exit-once-uploaded
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
