@@ -37,6 +37,8 @@ export default {
 .locator-test {
     padding: 20px;
     background-color: #f5f5f5;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .header {
@@ -45,7 +47,14 @@ export default {
 }
 
 .form-group {
+    display: flex;
+    align-items: center;
     margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-right: 10px;
+    min-width: 80px;
 }
 
 .form-input {
@@ -56,6 +65,8 @@ export default {
 
 .button-group {
     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .primary-button {
@@ -64,6 +75,7 @@ export default {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .secondary-button {

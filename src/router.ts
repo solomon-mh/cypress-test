@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import About from "./components/About.vue";
 import Home from "./components/Home.vue";
+import LocatorTest from "./components/LocatorTest.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -14,6 +15,12 @@ const routes: Array<RouteRecordRaw> = [
     name: "About",
     component: About,
     meta: { label: "Go to About" },
+  },
+  {
+    path: "/locator-test",
+    name: "LocatorTest",
+    component: LocatorTest,
+    meta: { label: "Go to Locator test" },
   },
 ];
 
