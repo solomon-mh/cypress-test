@@ -1,4 +1,4 @@
-import Home from "./Home.vue";
+import Home from "@/components/Home.vue";
 
 describe("<Home />", () => {
   it("renders", () => {
