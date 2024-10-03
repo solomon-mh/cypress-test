@@ -1,5 +1,6 @@
 import { prepareArchives } from "@chromaui/test-archiver/cypress";
 import { defineConfig } from "cypress";
+const { installPlugin } = require("@chromatic-com/cypress");
 
 export default defineConfig({
   component: {
@@ -9,6 +10,11 @@ export default defineConfig({
       bundler: "webpack",
     },
     setupNodeEvents(on, config) {
+      process.env.CHROMATIC_ARCHIVE_LOCATION =
+        "/Users/rr/DevOps/cypress-test/cypress/screenshots/";
+
+      installPlugin(on, config);
+
       on("task", {
         prepareArchives,
       });
@@ -29,6 +35,11 @@ export default defineConfig({
     baseUrl: "http://localhost:8080",
     specPattern: "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
     setupNodeEvents(on, config) {
+      process.env.CHROMATIC_ARCHIVE_LOCATION =
+        "/Users/rr/DevOps/cypress-test/cypress/screenshots/";
+
+      installPlugin(on, config);
+
       on("task", {
         prepareArchives,
       });
