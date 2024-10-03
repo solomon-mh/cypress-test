@@ -66,7 +66,8 @@ export default {
 .button-group {
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /* Center the buttons */
 }
 
 .primary-button {
