@@ -10,6 +10,7 @@ nav {
     padding: 1rem;
     background-color: #2c3e50;
     text-align: center;
+    color: white;
 }
 
 nav a {
