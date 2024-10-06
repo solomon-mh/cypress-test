@@ -23,7 +23,7 @@ const login = () => {
 .login-form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     width: 300px;
     margin: auto;
     align-items: center;
