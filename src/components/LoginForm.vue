@@ -7,9 +7,9 @@
 </template>
 
 <script lang="ts" setup>
-import Textbox from './Textbox.vue';
-import Button from './Button.vue';
 import { ref } from 'vue';
+import Button from './Button.vue';
+import Textbox from './Textbox.vue';
 
 const email = ref('');
 const password = ref('');
@@ -26,5 +26,12 @@ const login = () => {
     gap: 1rem;
     width: 300px;
     margin: auto;
+    align-items: center;
+    /* Centers the button horizontally */
+}
+
+button {
+    width: 100%;
+    /* Ensures the button takes full width */
 }
 </style>

@@ -1,6 +1,10 @@
 import vue from "@vitejs/plugin-vue";
-import { defineConfig } from "vite";
 
-export default defineConfig({
+export default {
+  resolve: {
+    alias: {
+      "@": "/src", // Ensure this alias points to the src directory
+    },
+  },
   plugins: [vue()],
-});
+};
