@@ -1,4 +1,4 @@
-# cypress-test
+# base-vue-project
 
 ## Project setup
 ```
