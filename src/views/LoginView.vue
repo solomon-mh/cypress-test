@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="login">
     <img alt="Vue logo" src="../assets/logo.png">
     <LoginForm />
   </div>
@@ -10,7 +10,7 @@ import LoginForm from '@/components/LoginForm.vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'HomeView',
+  name: 'LoginView',
   components: {
     LoginForm,
   },
@@ -18,8 +18,12 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.home {
+.login {
   text-align: center;
+  background-color: #f9f9f9;
+  padding: 50px;
+  border-radius: 10px;
+  margin: auto;
 }
 
 img {

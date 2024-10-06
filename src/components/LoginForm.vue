@@ -27,11 +27,17 @@ const login = () => {
     width: 300px;
     margin: auto;
     align-items: center;
-    /* Centers the button horizontally */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 button {
     width: 100%;
-    /* Ensures the button takes full width */
+}
+
+button:hover {
+    background-color: #379d71;
 }
 </style>

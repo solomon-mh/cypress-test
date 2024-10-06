@@ -19,7 +19,8 @@ export default defineComponent({
 
 <style scoped>
 .about {
-  padding: 20px;
+  padding: 30px;
   font-size: 20px;
+  background-color: #f1f1f1;
 }
 </style>

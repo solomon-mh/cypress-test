@@ -35,15 +35,20 @@ const onClick = () => {
 <style scoped>
 .storybook-button {
     font-family: 'Arial', sans-serif;
-    padding: 0.5rem 1rem;
-    border-radius: 3px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .storybook-button--primary {
     background-color: #42b983;
     color: white;
+}
+
+.storybook-button--primary:hover {
+    background-color: #379d71;
 }
 
 .storybook-button--secondary {
@@ -56,10 +61,18 @@ const onClick = () => {
 }
 
 .storybook-button--medium {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .storybook-button--large {
-    font-size: 16px;
+    font-size: 20px;
+}
+
+.storybook-button:hover {
+    transform: scale(1.05);
+}
+
+.storybook-button:focus {
+    outline: 2px solid #42b983;
 }
 </style>
