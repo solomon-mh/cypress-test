@@ -5,25 +5,27 @@
     </nav>
 </template>
 
-<script lang="ts" setup>
-</script>
-
 <style scoped>
 nav {
     padding: 1rem;
-    background-color: #42b983;
+    background-color: #2c3e50;
+    text-align: center;
+    color: white;
 }
 
 nav a {
     margin: 0 1rem;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #42b983;
 }
 
 nav a.router-link-exact-active {
-    margin: 0 1rem;
-    color: red;
-    text-decoration: none;
+    color: #42b983;
     font-weight: bold;
 }
 </style>
